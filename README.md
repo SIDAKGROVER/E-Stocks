@@ -1,5 +1,3 @@
-# E-Stocks
-
 # Trading App - E-stock
 
 ## Description
