@@ -24,5 +24,5 @@ We'll dive into several basic HTML concepts, including:
 ### Name of team members 
 ###  1.Sidak Singh
 ###  2.Pushkar 
-### 3.Pushkar Jain
+###  3.Pushkar Jain
 ### 4.Rudransh
