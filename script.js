@@ -34,5 +34,19 @@ monthBtn.addEventListener('click', () => {
     monthlyPlan.forEach(mo => { mo.style.display = 'block' });
 });
 
+// Back-to-top functionality
+const backToTopButton = document.createElement('button');
+backToTopButton.textContent = '↑';
+backToTopButton.classList.add('back-to-top');
+document.body.appendChild(backToTopButton);
+
+backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+window.addEventListener('scroll', () => {
+    backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
 
 

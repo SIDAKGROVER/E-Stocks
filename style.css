@@ -691,96 +691,71 @@ section {
     color: coral;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /* media queries */
-
-@media (max-width:991px){
-
-    html{
-        font-size: 55%;
-    }
+.login, .signup {
+    max-width: 40rem;
+    margin: 5rem auto;
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
 }
 
-@media (max-width:760px){
-
-    body{
-        padding-bottom: 7rem;
-    }
-
-    .navbar{
-        bottom:  0;
-    }
-
-    .navbar .nav{
-        border-bottom: 0;
-        border-left: 0;
-        border-right: 0;
-        border-radius: none;
-        padding: .5rem;
-        width: 100%;
-    }
-
-    .navbar .nav a{
-        padding: .5rem;
-    }
-
-    .navbar .nav a span{
-        font-size: 1.5rem;
-    }
-
-    .navbar .nav a i{
-        display: block;
-        font-size: 2.5rem;
-        margin-bottom: .5rem;
-    }
-
-    .navbar .nav a:hover{
-        background: none;
-    }
-    .navbar .nav a:hover span{
-        color: coral;
-    }
-    .home .flex .content h3{
-        font-size: 2.5rem;
-    }
-
-    .download .flex .content h3{
-        font-size: 2rem;
-    }
-    .download .flex .content a{
-        text-align: center;
-        width: 100%;
-    }
-    .newsletter .news .form .input{
-        width: 100%;
-    }
-
+.login h2, .signup h2 {
+    font-size: 2.5rem;
+    color: var(--white);
+    margin-bottom: 1rem;
 }
 
+.login form input, .signup form input, .signup form select {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: var(--border);
+    background: var(--black);
+    color: var(--white);
+    border-radius: 0.5rem;
+}
 
-@media (max-width:450px){
+.login p, .signup p {
+    margin-top: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
 
-    html{
-        font-size: 50%;
-    }
+.login p a, .signup p a {
+    color: var(--gradient);
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.login p a:hover, .signup p a:hover {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 4rem; /* Set width */
+    height: 4rem; /* Set height */
+    padding: 0; /* Remove padding */
+    font-size: 2rem;
+    background: var(--gradient);
+    color: var(--white);
+    border: none;
+    border-radius: 50%; /* Make it circular */
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    text-align: center;
+    line-height: 4rem; /* Center the text vertically */
+}
+
+.back-to-top:hover {
+    background: var(--white);
+    color: var(--black);
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./image/logo.png" type="image/png">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <section class="flex">
+            <a href="index.html" class="logo"><i class="fa-solid fa-money-bill-trend-up"></i>E-stock</a>
+            <a href="#download" class="btn">Download app</a>
+        </section>
+    </header>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="nav">
+            <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>
+            <a href="index.html#about"><i class="fas fa-circle-info"></i><span>About</span></a>
+            <a href="index.html#download"><i class="fas fa-download"></i><span>Download</span></a>
+            <a href="index.html#pricing"><i class="fas fa-comments-dollar"></i><span>Pricing</span></a>
+            <a href="login.html"><i class="fas fa-user"></i><span>Login</span></a>
+        </div>
+    </div>
+
+    <!-- Login Section -->
+    <section class="login">
+        <h2>Login</h2>
+        <form onsubmit="handleLogin(event)">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <p>Don't have an account? <a href="signup.html">Signup here</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <section class="box-container">
+            <!-- ...existing footer content from index.html... -->
+        </section>
+        <div class="credit">Created by <span>team z</span> | all rights reserved</div>
+    </footer>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault();
+            alert('Login successful!');
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
