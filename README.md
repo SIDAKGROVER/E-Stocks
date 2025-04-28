@@ -22,7 +22,7 @@ We'll dive into several basic HTML concepts, including:
 
 ### Enjoy CODE and pull requests are highly appreciated.
 ### Name of team members 
-###  1.Sidak Singh
+### 1.Sidak Singh
 ###  2.Pushkar 
 ###  3.Pushkar Jain
 ###  4.Rudransh
