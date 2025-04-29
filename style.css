@@ -879,3 +879,215 @@ canvas {
     background: var(--white);
     color: var(--black);
 }
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    section {
+        padding: 2rem 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .header .flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .navbar .nav {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .home .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home .flex .image img {
+        height: auto;
+    }
+
+    .about .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about .flex .image img {
+        height: auto;
+    }
+
+    .reviews .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .reviews .flex .content .controls {
+        justify-content: center;
+    }
+
+    .download .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .download .flex .images img {
+        height: auto;
+    }
+
+    .pricing .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    }
+
+    .newsletter .news form {
+        flex-direction: column;
+    }
+
+    .market .selector-section {
+        flex-direction: column;
+    }
+
+    .market .selector-section .input {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar .nav a {
+        font-size: 1.4rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .home .flex .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .home .flex .content p {
+        font-size: 1.4rem;
+    }
+
+    .services .box-container {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+
+    .reviews .flex .slide-container .slide .text {
+        font-size: 1.4rem;
+    }
+
+    .download .flex .content h3 {
+        font-size: 2.5rem;
+    }
+
+    .download .flex .content p {
+        font-size: 1.4rem;
+    }
+
+    .pricing .toggle-buttons .button {
+        font-size: 1.6rem;
+        width: 12rem;
+    }
+
+    .pricing .box-container .box h3 {
+        font-size: 1.6rem;
+    }
+
+    .newsletter .news h3 {
+        font-size: 2.5rem;
+    }
+
+    .newsletter .news p {
+        font-size: 1.4rem;
+    }
+
+    .login, .signup {
+        padding: 1.5rem;
+    }
+
+    .login h2, .signup h2 {
+        font-size: 2rem;
+    }
+
+    .login form input, .signup form input, .signup form select {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .header .flex .logo {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        font-size: 1.6rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .navbar .nav a {
+        font-size: 1.2rem;
+        padding: 0.6rem 1rem;
+    }
+
+    .home .flex .content h3 {
+        font-size: 2rem;
+    }
+
+    .home .flex .content p {
+        font-size: 1.2rem;
+    }
+
+    .about .flex .content h3 {
+        font-size: 2rem;
+    }
+
+    .about .flex .content p {
+        font-size: 1.2rem;
+    }
+
+    .reviews .flex .content h3 {
+        font-size: 2rem;
+    }
+
+    .reviews .flex .content p {
+        font-size: 1.2rem;
+    }
+
+    .download .flex .content h3 {
+        font-size: 2rem;
+    }
+
+    .download .flex .content p {
+        font-size: 1.2rem;
+    }
+
+    .pricing .toggle-buttons .button {
+        font-size: 1.4rem;
+        width: 10rem;
+    }
+
+    .pricing .box-container .box h3 {
+        font-size: 1.4rem;
+    }
+
+    .newsletter .news h3 {
+        font-size: 2rem;
+    }
+
+    .newsletter .news p {
+        font-size: 1.2rem;
+    }
+
+    .login, .signup {
+        padding: 1rem;
+    }
+
+    .login h2, .signup h2 {
+        font-size: 1.8rem;
+    }
+
+    .login form input, .signup form input, .signup form select {
+        font-size: 1.2rem;
+    }
+}
