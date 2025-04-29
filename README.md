@@ -5,6 +5,7 @@
 ➣ Create a responsive stock trading website design using HTML, CSS, and vanilla JavaScript from scratch. </br>
 ➣ Learn to make responsive e-stock marketing app website design, online trading app, and cryptocurrency app landing website design using HTML CSS and vanilla javascript step by step.
 
+### To preview our website https://sidakgrover.github.io/E-Stocks/
 ## What You'll Learn.
 
 We'll dive into several basic HTML concepts, including:
