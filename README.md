@@ -46,7 +46,7 @@ This project offers an excellentlearningopportunity for beginners to understand 
 
 ### Contributions
 
-Feel  free to contribute to this project by forking the repository and submitting pull requests. Your feedback and suggestions are highly appreciated.
+Feel  free to contribute to this project by forking the  repository and  submitting  pull requests. Your feedback and suggestions are highly appreciated.
 
 ---
 
