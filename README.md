@@ -16,7 +16,7 @@ Welcome to **E-Stocks**, a responsive stock trading and cryptocurrency trading w
 
 ## Technologies Used
 
-- **HTML5**: For structuring the web pages.
+- **HTML5**: For structuring the web  page.
 - **CSS3**: For responsive design, including media queries and flexbox for layouts.
 - **JavaScript**: Vanilla JavaScript for handling API requests and dynamic interactions.
 - **APIs**: Alpha Vantage for stock data, Binance for cryptocurrency data.
@@ -35,7 +35,7 @@ This project offers an excellent learning opportunity for beginners to understan
 
 ### Prerequisites
 - **Git**: Install Git on your local machine.
-- **GitHub Account**: You will need a GitHub account to fork and clone this repository.
+- **GitHub Account**: You will need a GitHub account to fork and clonethisrepository.
 
 ### Setup Instructions
 
