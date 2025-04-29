@@ -29,7 +29,7 @@ This project offers an excellentlearningopportunity for beginners to understand 
 - **Using CSS for styling**: Learning to style the website to make it visually appealing and responsive.
 - **Responsive Web Design**: Ensuring that your website looks great on all devices using media queries and CSS grid/flexbox.
 - **JavaScript Basics**: Implementing interactivity with JavaScript, such as fetching API data and updating content dynamically.
-- **Version Control**: Using Git for version control and collaborating   with other    developerss.
+- **Version Control**: Using Git for version control and collaborating   with other    developers.
 
 ## Installation Guide
 
