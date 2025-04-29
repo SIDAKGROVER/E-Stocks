@@ -1,4 +1,4 @@
-g# E-Stocks: Stock Trading App
+# E-Stocks: Stock Trading App
 
 ## Overview
 
