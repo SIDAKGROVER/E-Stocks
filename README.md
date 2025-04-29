@@ -35,7 +35,7 @@ This project offers an excellentlearningopportunity for beginners to understand 
 
 ### Prerequisites
 - **Git**: Install Git on your local machine.
-- **GitHub Account**: You will need a GitHub account to fork andclonethisrepository.
+- **GitHub Account**: You will need a GitHub account to fork   andclonethisrepository.
 
 ### Setup Instructions
 
