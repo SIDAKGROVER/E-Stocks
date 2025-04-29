@@ -23,7 +23,7 @@ Welcome to **E-Stocks**, a responsive stock trading and cryptocurrency trading w
 
 ## What You'll Learn
 
-This project offers an excellentlearningopportunity for beginners to understand basic web development concepts, including:
+This project offers an excellentlearningopportunity for beginners to understand basic web development concepts,including:
 
 - **Creating an HTML page**: Building the structure of the website  using HTML.
 - **Using CSS for styling**: Learning to style the website to make it visually appealing  and responsive.
