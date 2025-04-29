@@ -39,7 +39,6 @@
                     <option value="+91">+91 (India)</option>
                     <option value="+1">+1 (USA)</option>
                     <option value="+44">+44 (UK)</option>
-                    <!-- Add more country codes as needed -->
                 </select>
                 <input type="tel" placeholder="Mobile Number" required>
             </div>
@@ -49,6 +48,15 @@
         </form>
         <p>Already have an account? <a href="login.html">Login here</a></p>
     </section>
+
+    <!-- Signup Success Modal -->
+    <div id="signupSuccessModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupSuccessModal')">&times;</span>
+            <h3>Signup Successful</h3>
+            <p>Welcome! Redirecting to the homepage...</p>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
@@ -61,8 +69,18 @@
     <script>
         function handleSignup(event) {
             event.preventDefault();
-            alert('Signup successful!');
-            window.location.href = "index.html";
+            openModal('signupSuccessModal');
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 2000);
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
         }
     </script>
 </body>

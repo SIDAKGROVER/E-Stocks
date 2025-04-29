@@ -38,6 +38,15 @@
         <p>Don't have an account? <a href="signup.html">Signup here</a></p>
     </section>
 
+    <!-- Login Success Modal -->
+    <div id="loginSuccessModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginSuccessModal')">&times;</span>
+            <h3>Login Successful</h3>
+            <p>Welcome back! Redirecting to the homepage...</p>
+        </div>
+    </div>
+
     <!-- Footer -->
     <footer class="footer">
         <section class="box-container">
@@ -49,8 +58,18 @@
     <script>
         function handleLogin(event) {
             event.preventDefault();
-            alert('Login successful!');
-            window.location.href = "index.html";
+            openModal('loginSuccessModal');
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 2000);
+        }
+
+        function openModal(modalId) {
+            document.getElementById(modalId).style.display = 'flex';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
         }
     </script>
 </body>

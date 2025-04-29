@@ -239,28 +239,29 @@
 
     <!-- download section start  -->
     <div class="download" id="download">
-
-        <section class="flex">
-
-            <div class="images">
-                <img src="./image/img-3@2x-1.png" alt="">
+    <section class="flex">
+        <div class="images">
+            <img src="./image/img-3@2x-1.png" alt="">
+        </div>
+        <div class="content">
+            <h3>download and start trading !</h3>
+            <p>Download our app from Google Play or the Apple Store for a chance to win exciting prizes! Start your journey to financial success today.</p>
+            <div class="links">
+                <a href="#" onclick="showModal('Google Play')" class="btn"><i class="fab fa-google-play"></i> google play</a>
+                <a href="#" onclick="showModal('Apple Store')" class="btn"><i class="fab fa-apple"></i> apple store</a>
             </div>
+        </div>
+    </section>
+</div>
 
-
-            <div class="content">
-                <h3>download and start trading !</h3>
-                <p>ownload our app from Google Play or the Apple Store for a chance to win exciting prizes! Start your journey to financial success today.</p>
-                <div class="links">
-                    <a href="#"><i class="fab fa-google-play"> google play</i></a>
-                    <a href="#"><i class="fab fa-apple"> apple store</i></a>
-                </div>
-            </div>
-
-
-        </section>
+<!-- Modal Popup -->
+<div id="appModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h3>Work in Progress</h3>
+        <p>The app is currently under development. Stay tuned for updates!</p>
     </div>
-
-
+</div>
 
     <!-- download section ends -->
 
@@ -271,60 +272,68 @@
 
     
     <section class="pricing" id="pricing">
+    <div class="toggle-buttons">
+        <div class="button month-btn active">monthly</div>
+        <div class="button year-btn">yearly</div>
+    </div>
 
-        <div class="toggle-buttons">
-            <div class="button month-btn active">monthly</div>
-            <div class="button year-btn">yearly</div>
+    <div class="box-container">
+        <div class="box">
+            <h3>Basic</h3>
+            <div class="price month"><span>$9.99 / </span><span>monthly</span></div>
+            <div class="price year"><span>$99.99 / </span><span>yearly</span></div>
+
+            <div class="list">
+                <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
+                <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
+                <p><i class="fas fa-circle-check"></i><span>account management</span></p>
+                <p><i class="fas fa-circle-xmark"></i><span>personal advisors</span></p>
+                <p><i class="fas fa-circle-xmark"></i><span>24/7 technical support</span></p>
+            </div>
+            <a href="#" class="btn" onclick="showPlanModal()">choose plan</a>
         </div>
 
-        <div class="box-container">
-            <div class="box">
-                <h3>Basic</h3>
-                <div class="price month"><span>$9.99 / </span><span>monthly</span></div>
-                <div class="price year"><span>$99.99 / </span><span>yearly</span></div>
+        <div class="box">
+            <h3>standard</h3>
+            <div class="price month"><span>$29.99 / </span><span>monthly</span></div>
+            <div class="price year"><span>$199.99 / </span><span>yearly</span></div>
 
-                <div class="list">
-                    <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>account management</span></p>
-                    <p><i class="fas fa-circle-xmark"></i><span>personal advisors</span></p>
-                    <p><i class="fas fa-circle-xmark"></i><span>24/7 technical support</span></p>
-                </div>
-                <a href="#" class="btn">choose plan</a>
+            <div class="list">
+                <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
+                <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
+                <p><i class="fas fa-circle-check"></i><span>account management</span></p>
+                <p><i class="fas fa-circle-check"></i><span>personal advisors</span></p>
+                <p><i class="fas fa-circle-xmark"></i><span>24/7 technical support</span></p>
             </div>
-
-            <div class="box">
-                <h3>standard</h3>
-                <div class="price month"><span>$29.99 / </span><span>monthly</span></div>
-                <div class="price year"><span>$199.99 / </span><span>yearly</span></div>
-
-                <div class="list">
-                    <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>account management</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>personal advisors</span></p>
-                    <p><i class="fas fa-circle-xmark"></i><span>24/7 technical support</span></p>
-                </div>
-                <a href="#" class="btn">choose plan</a>
-            </div>
-
-            <div class="box">
-                <h3>premium</h3>
-                <div class="price month"><span>$49.99 / </span><span>monthly</span></div>
-                <div class="price year"><span>$299.99 / </span><span>yearly</span></div>
-
-                <div class="list">
-                    <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>account management</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>personal advisors</span></p>
-                    <p><i class="fas fa-circle-check"></i><span>24/7 technical support</span></p>
-                </div>
-                <a href="#" class="btn">choose plan</a>
-            </div>
+            <a href="#" class="btn" onclick="showPlanModal()">choose plan</a>
         </div>
-    </section>
-    
+
+        <div class="box">
+            <h3>premium</h3>
+            <div class="price month"><span>$49.99 / </span><span>monthly</span></div>
+            <div class="price year"><span>$299.99 / </span><span>yearly</span></div>
+
+            <div class="list">
+                <p><i class="fas fa-circle-check"></i><span>trade learning access</span></p>
+                <p><i class="fas fa-circle-check"></i><span>graphical chart reports</span></p>
+                <p><i class="fas fa-circle-check"></i><span>account management</span></p>
+                <p><i class="fas fa-circle-check"></i><span>personal advisors</span></p>
+                <p><i class="fas fa-circle-check"></i><span>24/7 technical support</span></p>
+            </div>
+            <a href="#" class="btn" onclick="showPlanModal()">choose plan</a>
+        </div>
+    </div>
+</section>
+
+<!-- Plan Modal -->
+<div id="planModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal('planModal')">&times;</span>
+        <h3>Feature in Progress</h3>
+        <p>The subscription feature is currently under development. Stay tuned for updates!</p>
+    </div>
+</div>
+
     <!-- pricing section ends --> 
 
 
@@ -401,3 +410,9 @@
     <script src="script.js"></script>    
 </body>
 </html>
+
+<script>
+    function showPlanModal() {
+        openModal('planModal');
+    }
+</script>

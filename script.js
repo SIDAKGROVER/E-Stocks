@@ -48,5 +48,23 @@ window.addEventListener('scroll', () => {
     backToTopButton.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
 
+function showModal(storeName) {
+    const modal = document.getElementById('appModal');
+    modal.querySelector('p').textContent = `The ${storeName} app is currently under development. Stay tuned for updates!`;
+    modal.style.display = 'flex';
+}
+
+function closeModal() {
+    const modal = document.getElementById('appModal');
+    modal.style.display = 'none';
+}
+
+window.addEventListener('click', (event) => {
+    const modal = document.getElementById('appModal');
+    if (event.target === modal) {
+        modal.style.display = 'none';
+    }
+});
+
 
 
