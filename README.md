@@ -7,6 +7,7 @@
 
 ### To preview our website https://sidakgrover.github.io/E-Stocks/
 ## What You'll Learn.
+#
 
 We'll dive into several basic HTML concepts, including:
 
