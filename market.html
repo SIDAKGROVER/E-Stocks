@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Market Insights - E-Stocks</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <section class="flex">
+      <a href="index.html" class="logo"><i class="fa-solid fa-money-bill-trend-up"></i>E-stock</a>
+      <a href="#download" class="btn">Download app</a>
+    </section>
+  </header>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="nav">
+      <a href="index.html"><i class="fa-solid fa-home"></i><span>Home</span></a>
+      <a href="index.html#about"><i class="fas fa-circle-info"></i><span>About</span></a>
+      <a href="index.html#download"><i class="fas fa-download"></i><span>Download</span></a>
+      <a href="index.html#pricing"><i class="fas fa-comments-dollar"></i><span>Pricing</span></a>
+      <a href="market.html"><i class="fas fa-chart-line"></i><span>Market</span></a>
+      <a href="login.html"><i class="fas fa-user"></i><span>Login</span></a>
+    </div>
+  </div>
+
+  <!-- Market Insights Section -->
+  <section class="market">
+    <h2>Market Insights</h2>
+    <p class="market-description">Explore live stock data and trends with our interactive market insights tool.</p>
+    <div class="selector-section">
+      <input type="text" id="search-input" placeholder="Search for a stock (e.g., AAPL)..." class="input">
+      <button class="btn" onclick="searchAsset()">Search</button>
+    </div>
+    <div id="result-section" class="results">
+      <h3>Result</h3>
+      <div id="result-display"></div>
+      <canvas id="priceChart"></canvas>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <section class="box-container">
+      <!-- ...existing footer content from index.html... -->
+    </section>
+    <div class="credit">Created by <span>team z</span> | all rights reserved</div>
+  </footer>
+
+  <script>
+    const alphaKey = 'YOUR_ALPHA_VANTAGE_KEY'; // Replace with your actual API key
+    const resultDisplay = document.getElementById('result-display');
+    const priceChart = document.getElementById('priceChart');
+    let chartInstance;
+
+    async function searchAsset() {
+      const query = document.getElementById('search-input').value.toUpperCase();
+      if (!query) return;
+
+      const url = `https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=${query}&apikey=${alphaKey}`;
+      try {
+        const res = await fetch(url);
+        const data = await res.json();
+        const times = data['Time Series (Daily)'];
+        if (!times) return resultDisplay.innerHTML = 'No data found';
+
+        const labels = Object.keys(times).slice(0, 10).reverse();
+        const prices = labels.map(date => parseFloat(times[date]['4. close']));
+        renderChart(labels, prices);
+        resultDisplay.innerHTML = `<strong>${query}</strong><br/>Latest Close: $${prices[prices.length - 1].toFixed(2)}`;
+      } catch (err) {
+        resultDisplay.innerHTML = 'Error fetching data.';
+        console.error(err);
+      }
+    }
+
+    function renderChart(labels, prices) {
+      if (chartInstance) chartInstance.destroy();
+      chartInstance = new Chart(priceChart, {
+        type: 'line',
+        data: {
+          labels,
+          datasets: [{
+            label: 'Price',
+            data: prices,
+            borderColor: 'rgb(75, 192, 192)',
+            fill: false,
+            tension: 0.1
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: { display: false }
+          }
+        }
+      });
+    }
+  </script>
+</body>
+</html>

@@ -808,3 +808,74 @@ section {
 .modal-content .close:hover {
     color: coral;
 }
+
+.market {
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.market h2 {
+    font-size: 3.5rem;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.market-description {
+    font-size: 1.6rem;
+    color: var(--light-white);
+    margin-bottom: 2rem;
+}
+
+.selector-section {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.selector-section .input {
+    width: 30%;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    background: var(--black);
+    color: var(--white);
+}
+
+.results {
+    background: var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
+    color: var(--white);
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: left;
+}
+
+.results h3 {
+    font-size: 2rem;
+    color: coral;
+    margin-bottom: 1rem;
+}
+
+canvas {
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.selector-section .btn {
+    background: var(--gradient);
+    color: var(--white);
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.selector-section .btn:hover {
+    background: var(--white);
+    color: var(--black);
+}
