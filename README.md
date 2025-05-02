@@ -1,4 +1,3 @@
-
 # E-Stocks: Stock Trading App 
  
 ## Overview.
