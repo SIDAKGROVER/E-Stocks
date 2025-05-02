@@ -18,7 +18,7 @@
 
 ## Technologies Used
 
-- **HTML5**:  For structuring the web  page.
+- **HTML5**:  For  structuring the web  page.
 - **CSS3**: For responsive design, including media queries and flexbox for layouts.
 - **JavaScript**: Vanilla JavaScript for handling API requests and dynamic interactions.
 - **APIs**: Alpha Vantage for stock data, Binance for cryptocurrency data.
