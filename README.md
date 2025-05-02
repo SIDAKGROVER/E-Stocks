@@ -2,7 +2,7 @@
  
 ## Overview.
 
-Welcome to **E-Stocks**, a responsive stock trading and cryptocurrency trading website, designed using **HTML**, **css**, and  **vanilla JavaScript**. This platform provides an intuitive  interface for  users to search, analyze, and  manage  their   investments   in   both   stocks  andcryptocurrencies.  From  creating a  user- friendly landing  page to   implementing advanced market features , we provide a step-by-step approach to building an interactive trading app.
+Welcome to **E-Stocks**, a responsive stock trading and cryptocurrency trading website, designed using **HTML**, **css**, and  **vanilla JavaScript**. This platform provides an intuitive  interface for  users to search, analyze, and  manage  their   investments   in   both   stocks  andcryptocurrencies.  From  crea ting a  user- friendly landing  page to   implementing advanced market features , we provide a step-by-step approach to building an interactive trading app.
 
 [**Preview E-Stocks**](https://sidakgrover.github.io/ E-Stocks/)
 
