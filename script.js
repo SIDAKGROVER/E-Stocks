@@ -1,4 +1,4 @@
-let slides = document.querySelectorAll('.reviews .flex .slide-container .slide');
+ let slides = document.querySelectorAll('.reviews .flex .slide-container .slide');
 
 let index = 0;
 
