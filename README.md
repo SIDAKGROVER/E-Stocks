@@ -13,12 +13,12 @@
 - **Responsive Design**:  Ensures  the  app  is  fully  functional  on  both  desktop and  mobile devices.
 - **Stock & Crypto Integration**: Fetches real-time data for stocks (via Alpha Vantage) andcryptocurrencies (via    Binance  API).
 - **Trending Assets Section**:  Displays  the  most  active  stocks and   crypto assets.
-- **Search Functionality**:  Allows users to search and toggle between stocks and cryptocurrencies with  an easy-to-use search bar.
+- **Search Functionality**:  Allows  users to search and toggle between stocks and cryptocurrencies with  an easy-to-use search bar.
 - **Interactive Charts**: Real-time charts displaying asset performance.
 
 ## Technologies Used
 
-- **HTML5**: For structuring the web  page.
+- **HTML5**:  For structuring the web  page.
 - **CSS3**: For responsive design, including media queries and flexbox for layouts.
 - **JavaScript**: Vanilla JavaScript for handling API requests and dynamic interactions.
 - **APIs**: Alpha Vantage for stock data, Binance for cryptocurrency data.
