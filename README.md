@@ -27,7 +27,7 @@
 
 This project offers an excellentlearningopportunity for beginners to understand basic web development concepts,including:
 
-- **Creating an HTML page**: Building the structure of the website  using HTML.
+- **Creating an HTML page**:  Building the structure of the website  using HTML.
 - **Using CSS for styling**: Learning to style the website to make it visually appealing  and responsive.
 - **Responsive Web  Design**: Ensuring that your website looks great on all devices using media queries and CSS  grid/flexbox.
 - **JavaScript Basics**: Implementing interactivity with JavaScript, such as fetching API data and  updating  content dynamically.
