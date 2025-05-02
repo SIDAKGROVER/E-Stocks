@@ -41,7 +41,7 @@ This project offers an excellentlearningopportunity for beginners to understand 
 
 ### Setup Instructions
 
-1. **Fork the repository**:  Click  on  the fork button at the top right of theGitHub repository page.
+1. **Fork the repository**:  Click  on  the  fork button at the top right of theGitHub repository page.
 2. **Clone the repository**: Clone the forked repository to your local machine using:
    ```bash
    git clone https://github.com/YOUR_USERNAME/E-Stocks.git
